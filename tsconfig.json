@@ -22,7 +22,8 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true
+		"noFallthroughCasesInSwitch": true,
+		"forceConsistentCasingInFileNames": true
 	},
 	"include": ["custom.d.ts", "env.d.ts", "src", "setupTest.ts"],
 	"exclude": ["node_modules", "tmp", ".vscode", ".husky"],
