@@ -50,7 +50,9 @@ export const Modal = ({
 					</svg>
 				</button>
 				{title && (
-					<h2 className="text-center text-[40px] leading-[1.2] px-6 pb-6">
+					<h2
+						className={`text-center text-[40px] leading-[1.2] px-6 pb-6 ${isConfirm ? 'mb-24' : ''}`}
+					>
 						{title}
 					</h2>
 				)}
