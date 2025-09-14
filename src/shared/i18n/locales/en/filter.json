@@ -1,9 +1,9 @@
 {
-  "apply": "Apply",
-  "applyNewFilter": "Apply new filter",
-  "clear": "Clear all parameters",
-  "open": "Open Filters",
-  "confirmApply": "Do you want to apply new filter",
+	"apply": "Apply",
+	"applyNewFilter": "Apply new filter",
+	"clear": "Clear all parameters",
+	"open": "Open Filters",
+	"confirmApply": "Do you want to apply new filter",
 	"useOldFilter": "Use old filter",
 	"filter": "Filter",
 	"debugFilters": "Current Filters (debug)"
