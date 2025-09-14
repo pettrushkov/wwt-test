@@ -17,19 +17,21 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm install
+      - run: npm install -g pnpm
+
+      - run: pnpm install
 
       - name: Lint code
-        run: npm run lint:all
+        run: pnpm run lint:all
 
       - name: TypeScript check
-        run: tsc --noEmit
+        run: pnpm tsc --noEmit
 
       - name: Prettier check
-        run: npm run format:check:all
+        run: pnpm run format:check:all
 
       - name: Run tests
-        run: npm test
+        run: pnpm test
 
       - name: Collect coverage
-        run: npm run coverage
+        run: pnpm run coverage
