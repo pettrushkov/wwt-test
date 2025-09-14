@@ -22,8 +22,8 @@ export const ActionButton: React.FC<ActionButtonProps> = ({
 	}
 
 	const sizes: Record<typeof size, string> = {
-		normal: 'min-w-[184px]',
-		wide: 'min-w-[280px]'
+		normal: 'md:min-w-[184px]',
+		wide: 'md:min-w-[280px]'
 	}
 
 	return (

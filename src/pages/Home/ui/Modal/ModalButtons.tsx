@@ -25,16 +25,16 @@ export const ModalButtons = ({
 	return (
 		<>
 			{!isConfirm && (
-				<div className="flex justify-between items-center pt-8">
-					<div className="w-1/3"></div>
-					<div className="w-1/3 flex justify-center">
+				<div className="flex flex-col justify-between items-center pt-8 md:flex-row gap-4">
+					<div className="md:w-1/3"></div>
+					<div className="md:w-1/3 flex justify-center">
 						<ActionButton
 							label={t('filter:apply')}
 							variant="apply"
 							onClick={() => openConfirm?.()}
 						/>
 					</div>
-					<div className="w-1/3 flex justify-end">
+					<div className="md:w-1/3 flex justify-end">
 						<button
 							className="underline leading-5 font-medium text-[#078691] transition-opacity hover:opacity-75 cursor-pointer"
 							onClick={resetLocal}
@@ -45,7 +45,7 @@ export const ModalButtons = ({
 				</div>
 			)}
 			{isConfirm && (
-				<div className="flex justify-center gap-8 items-center">
+				<div className="flex justify-center gap-4 md:gap-8 items-center">
 					<ActionButton
 						label={t('filter:useOldFilter')}
 						variant="discard"

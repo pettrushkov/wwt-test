@@ -15,13 +15,13 @@ export const Filters = ({ localFilters, setLocalFilters }: FiltersProps) => {
 	})
 
 	return (
-		<div className="border-t-2 border-b-2 border-[#B4B4B4] py-8">
+		<div className="border-t-2 border-b-2 border-[#B4B4B4] py-4 md:py-8">
 			{filterItems?.map((item, i) => (
 				<div
 					key={item.id}
-					className={`py-8 ${filterItems.length !== i + 1 ? 'border-b-2 border-[#B4B4B4]' : ''}`}
+					className={`py-4 md:py-8 ${filterItems.length !== i + 1 ? 'border-b-2 border-[#B4B4B4]' : ''}`}
 				>
-					<h2 className="font-medium text-2xl leading-[1.2] pb-6">
+					<h2 className="font-medium text-xl md:text-2xl md:leading-[1.2] pb-3 md:pb-6">
 						{item.name}
 					</h2>
 					<div className="flex flex-wrap">
@@ -36,8 +36,8 @@ export const Filters = ({ localFilters, setLocalFilters }: FiltersProps) => {
 										item.options.length === 2
 											? 'w-full'
 											: item.options.length === 4
-												? 'w-1/2'
-												: 'w-1/3'
+												? 'w-full md:w-1/2'
+												: 'w-full md:w-1/3'
 									} pr-4 mb-4 relative pl-10`}
 								>
 									<input

@@ -31,9 +31,9 @@ export const Modal = ({
 
 	return (
 		<div className="fixed top-0 right-0 bottom-0 left-0 backdrop-blur-xl bg-[rgba(27,27,27,0.3)]">
-			<div className="absolute top-1/2 -translate-y-1/2 max-h-[calc(100%-160px)] left-20 right-20 z-20 bg-white rounded-2xl p-8 overflow-auto">
+			<div className="absolute top-1/2 -translate-y-1/2 max-h-[calc(100%-32px)] left-4 right-4 md:max-h-[calc(100%-160px)] p-4 md:left-20 md:right-20 z-20 bg-white rounded-2xl md:p-8 overflow-auto">
 				<button
-					className="absolute p-0.5 top-11 right-8 cursor-pointer hover:opacity-50 transition-opacity"
+					className="absolute p-0.5 top-5 md:top-11 right-8 cursor-pointer hover:opacity-50 transition-opacity"
 					onClick={hideModal}
 				>
 					<svg
@@ -51,7 +51,7 @@ export const Modal = ({
 				</button>
 				{title && (
 					<h2
-						className={`text-center text-[40px] leading-[1.2] px-6 pb-6 ${isConfirm ? 'mb-24' : ''}`}
+						className={`text-2xl text-center md:text-[40px] md:leading-[1.2] px-12 md:px-6 pb-6 ${isConfirm ? 'mb-12 md:mb-24' : ''}`}
 					>
 						{title}
 					</h2>
