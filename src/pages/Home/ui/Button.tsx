@@ -14,7 +14,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({
 	size = 'normal'
 }) => {
 	const baseStyles =
-		'px-4 rounded-2xl font-semibold transition-opacity hover:opacity-75'
+		'px-4 rounded-2xl font-semibold transition-opacity hover:opacity-75 cursor-pointer'
 
 	const variants: Record<typeof variant, string> = {
 		apply: 'bg-[#FF5F00] text-white',
